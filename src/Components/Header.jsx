@@ -1,14 +1,12 @@
-
 import { CiSearch } from "react-icons/ci";
 import { IoIosNotificationsOutline } from "react-icons/io";
 
-
 const Header = () => {
   return (
-    <header className="bg-black  text-white text-sm px-40 py-6">
+    <header className="fixed top-0 left-0 right-0 bg-black text-white text-sm px-40 py-6 shadow-md z-50">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
-        <div className="flex items-center space-x-4 ">
-          <a href="#" className="hover:text-red-600 ">Home</a>
+        <div className="flex items-center space-x-4">
+          <a href="#" className="hover:text-red-600">Home</a>
           <a href="#" className="hover:text-red-600">Genre</a>
           <a href="#" className="hover:text-red-600">Country</a>
         </div>
