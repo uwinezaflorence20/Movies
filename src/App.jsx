@@ -1,23 +1,17 @@
-
-import Header from './Components/Header';
-import MovieDetail from './Components/MovieDetails';
-import NewRelease from './Components/NewRelease';
-import RecentlyUpdated from './Components/RecentlyUpdated';
-import RecommendedSection from './Components/RecommendedSection';
-import TrendingMovies from './Components/TrendingMovies';
-
-
+import Home from "./components/Home/Home.jsx";
+import Header from "./components/Header/Header.jsx";
+import "./App.css";
+import Films from "./components/Films/Films.jsx";
+import SingleMovie from "./SingleMovie.jsx";
+import { Outlet } from "react-router-dom";
+import Footer from "./Footer.jsx";
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <MovieDetail />
-     <RecentlyUpdated/>
-     <TrendingMovies/>
-     <NewRelease/>
-     <RecommendedSection/>
-    </div>
+    <>
+       <Header />
+       <Outlet/>
+       <Footer/>
+    </>
   );
 }
-
 export default App;
